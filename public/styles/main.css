@@ -1,0 +1,154 @@
+body {
+    background: linear-gradient(-45deg, rgba(14, 17, 22, 1), rgba(20, 21, 24, 1), rgb(23, 35, 73));
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    font-family: Segoe UI;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mainstuff{
+    position: relative;
+    margin-top: 200px;
+    z-index: 3;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.subtitle {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gradient-border {
+    opacity: 1;
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    width: 600px; /* Adjust the width as needed */
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px; /* Add padding for inner content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.form {
+    width: 100%; /* Ensure form takes full width of the box */
+    display: flex;
+    flex-direction: column; /* Stack form rows vertically */
+    align-items: center; /* Center form content horizontally */
+    gap: 15px; /* Add spacing between rows */
+}
+
+.form .row {
+    display: flex;
+    justify-content: center; /* Center form items in a row */
+    gap: 10px; /* Add spacing between form elements */
+}
+
+.gradient-border h1 {
+    margin: 20px 0;
+}
+
+
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #4d0253, #220247, #470101, #a166ab, #5073b8, #4710ad, #5442b9, #000000);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 60s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+  
+
+
+/* Images */
+.imagerows {
+    position: absolute;
+    z-index: 0; /* Ensure this is higher than .mainstuff */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full-width */
+    opacity: 0.5; /* Make it semi-transparent */
+}
+
+
+
+
+/* Container for the scrolling images */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Flexbox container for images */
+.images {
+    display: flex;
+    animation: scroll 60s linear infinite;
+    /* Adjust animation timing for smooth loop */
+}
+
+/* Style each image */
+.images img {
+    width: auto;
+    height: 800px;
+    border: 1px solid #bb0808;
+    margin-right: 100px;
+}
+
+/* Define the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-6000px));
+        /* Move left by the total width of 5 images plus margins */
+    }
+}
