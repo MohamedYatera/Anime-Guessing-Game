@@ -20,14 +20,27 @@
         <div class="row ">
             <div class="col d-flex flex-column align-items-center">
                 <h1 class="fw-bold title">AnimeGuessr</h1>
-                <h1> Round <%= roundProgress %></h1>
+                <h1 class="fw-semibold"> Round <%= roundProgress %></h1>
               
                 <img src="<%= pfpList[nameListIndex] %>" alt="Image 1">
-                <%= nameList[nameListIndex].split(" ")[0] + " " + nameList[nameListIndex].split(" ")[1] %>
 
-                <form action="/start-game" method="POST">
-                    <input type="text" name="guess" placeholder="Enter the guess">
-                    <button type="submit">Submit</button>
+
+                <button class="reveal-btn reveal-btn-moving-gradient reveal-btn-moving-gradient--blue">Reveal</button>
+
+                <div class="hint fw-semibold">
+                    <%= 
+                    [locals.nameList[nameListIndex].split(" ")[0], 
+                     locals.nameList[nameListIndex].split(" ")[1], 
+                     locals.nameList[nameListIndex].split(" ")[2]]
+                    .map(part => part === "undefined" ? "" : part)
+                    .join(" ") 
+                  %>
+                </div>
+               
+                
+                <form class="form" action="/start-game" method="POST">
+                    <input class="fw-semibold"  id="textboxid" type="text" name="guess" placeholder="Enter the guess">
+                    <button class="submit-btn submit-btn-moving-gradient submit-btn-moving-gradient--purple  fw-semibold" type="submit"> Submit</button>
                 </form>
             </div>
 

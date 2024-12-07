@@ -1,10 +1,11 @@
 body {
     background: linear-gradient(-45deg, rgba(14, 17, 22, 1), rgba(20, 21, 24, 1), rgb(23, 35, 73));
     background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
+    animation: gradient 35s ease infinite;
     height: 100vh;
     color: rgb(255, 255, 255);
     font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -21,3 +22,114 @@ body {
     }
 }
 
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+
+
+img {
+    width: auto;
+    height: 500px;
+    border-radius: 6px;
+}
+
+.reveal-btn {
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+
+
+.hint {
+    visibility: hidden;
+    margin-top: 15px;
+    
+}
+
+
+
+
+.form {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Space between input and button */
+    margin-top: 30px;
+
+}
+
+#textboxid {
+    padding: 8px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.reveal-btn {
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.reveal-btn:hover .reveal-btn-slide-show-text1 {
+    margin-left: 65px;
+}
+
+.reveal-btn-moving-gradient {
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: medium;
+    background-size: 300% 100%;
+    border-radius: 50px;
+}
+
+.reveal-btn-moving-gradient:hover {
+    transition: 0.5s ease-in-out;
+    background-position: 100% 0px;
+}
+
+.reveal-btn-moving-gradient--blue {
+    background-image: linear-gradient(90deg, rgb(135, 156, 192), rgb(168, 136, 185), rgb(156, 137, 196), rgb(107, 131, 168));
+    box-shadow: rgba(190, 61, 255, 0.089) 0px 4px 15px 0px;
+}
+
+
+
+
+.submit-btn {
+    text-transform: uppercase;
+}
+
+.submit-btn:hover .submit-btn-slide-show-text1 {
+    margin-left: 65px;
+}
+
+.submit-btn-moving-gradient {
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: medium;
+    background-size: 300% 100%;
+    border-radius: 50px;
+}
+
+.submit-btn-moving-gradient:hover {
+    transition: 0.5s ease-in-out;
+    background-position: 100% 0px;
+}
+
+.submit-btn-moving-gradient--purple {
+    background-image: linear-gradient(90deg, rgb(94, 89, 143), rgb(137, 84, 141), rgb(115, 86, 134), rgb(96, 91, 143));
+    box-shadow: rgba(135, 53, 141, 0.404) 0px 4px 15px 0px;
+}
