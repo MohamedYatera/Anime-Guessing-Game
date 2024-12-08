@@ -45,7 +45,7 @@ Key Features:
 *CSS: Styling language for designing the visual appearance of the website.
 *JavaScript: Programming language used for front-end and back-end functionality.
 
-
+<div align="center">
 
 ![image](https://github.com/user-attachments/assets/544b53ef-4b6c-4b66-ab94-da9cb4f2f578)
 
@@ -56,7 +56,7 @@ Key Features:
 ![image](https://github.com/user-attachments/assets/2a2d022f-a861-415b-93df-c07f90ede7ea)
 
 
-
+</div>
 
 
 
