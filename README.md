@@ -37,17 +37,20 @@ Key Features:
 ## Technologies 
 	* Node.js: JavaScript runtime environment for building the server-side application.
  
+ 	* Jikan API: Public API for fetching data on anime, characters, and more.
+ 
 	* Express: Web framework for Node.js to handle routing and server-side logic.
  
 	* EJS: Templating engine for rendering dynamic HTML pages with embedded JavaScript.
+ 
 	* Body-Parser: Middleware to handle form data in POST requests.
+ 
 	* Bootstrap: Front-end framework for responsive web design and styling.
+ 
 	* jQuery: JavaScript library for DOM manipulation and event handling.
-	* Postman: API development and testing tool to ensure the correct functionality of API endpoints.
-	* Jikan API: Public API for fetching data on anime, characters, and more.
+ 
 	* Axios: Promise-based HTTP client for making API requests from the server.
-	* HTML: Markup language for structuring content on the web.
-	* CSS: Styling language for designing the visual appearance of the website.
+
 	* JavaScript: Programming language used for front-end and back-end functionality.
 
 <div align="center">
@@ -62,7 +65,6 @@ Key Features:
 
 
 </div>
-
 
 
 
