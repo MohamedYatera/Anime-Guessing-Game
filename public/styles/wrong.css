@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(-45deg, rgba(14, 17, 22, 1), rgba(20, 21, 24, 1), rgb(23, 35, 73));
+    background-size: 400% 400%;
+    animation: gradient 35s ease infinite;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text1, .text2, .text3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text1{
+    margin-top: 50px;
+}
+
+.text2{
+    margin-top: 25px;
+    margin-bottom: 25px; 
+}
+
+.text3 > p > span{
+    color: gold;
+}
+
+.retry-btn{
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+
+
+.retry-btn, .quit-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.retry-btn:hover .retry-btn-slide-show-text1, .quit-btn:hover, .quit-btn-slide-show-text1 {
+    margin-left: 65px;
+}
+
+.retry-btn-moving-gradient, .quit-btn-moving-gradient {
+    height: 55px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: medium;
+    background-size: 300% 100%;
+    border-radius: 50px;
+}
+
+.retry-btn-moving-gradient:hover, .quit-btn-moving-gradient:hover {
+    transition: 0.5s ease-in-out;
+    background-position: 100% 0px;
+}
+
+.retry-btn-moving-gradient--red, .quit-btn-moving-gradient--red {
+    background-image: linear-gradient(90deg, rgb(239, 37, 60), rgb(239, 148, 37), rgb(239, 104, 37), rgb(239, 35, 60));
+    box-shadow: rgb(239, 148, 37) 0px 4px 15px 0px;
+}

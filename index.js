@@ -64,6 +64,14 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/retry", async (req, res) => {
+  return res.redirect('/');
+});
+
+app.get("/quit", async (req, res) => {
+  return res.redirect('/');
+});
+
 
 app.post("/", async (req, res) => {
   try {
@@ -131,7 +139,7 @@ app.post("/start-game", async (req, res) => {
 
     // Check if the game has ended
     if (nameListIndex == rounds) {
-      return res.render("index.ejs", { message: "Game Over !" });
+      return res.redirect('/');
     }
 
     // Check if the guess is correct
@@ -146,7 +154,8 @@ app.post("/start-game", async (req, res) => {
     } else {
       // Render the "wrong guess" EJS file
       return res.render("wrongGuess.ejs", {
-        message: "Incorrect Guess! Try again next time.",
+        message: "Incorrect Guess!",
+        pfpList: pfpList[nameListIndex],
         correctAnswer: nameList[nameListIndex],
         roundProgress: roundProgress
       });
