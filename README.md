@@ -36,7 +36,9 @@ Key Features:
    
 ## Technologies 
 	* Node.js: JavaScript runtime environment for building the server-side application.
+ 
 	* Express: Web framework for Node.js to handle routing and server-side logic.
+ 
 	* EJS: Templating engine for rendering dynamic HTML pages with embedded JavaScript.
 	* Body-Parser: Middleware to handle form data in POST requests.
 	* Bootstrap: Front-end framework for responsive web design and styling.
