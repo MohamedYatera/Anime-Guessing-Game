@@ -23,14 +23,17 @@ Key Features:
 1. Clone the repository
     * git clone <repository-url>
     * cd <repository-folder>
-       
+            
 2. Install the required dependencies
-    * Make sure you have Node.js installed. Then, run the following command to install the required packages:
-    * type "npm i"  in your vs code  terminal (without the quotation marks)
+    * Make sure you have Node.js installed.
+    * Then, run the following command to install the required packages:
+    * type "npm i"  in your vs code  terminal 
+      
 3. Start the server
-    * type "node .\index.js" in your vs code  terminal (without the quotation marks)
-4. Go to your browser and type "http://localhost:3000/" in the url(without the quotation marks)
-
+    * type "node .\index.js" in your vs code  terminal
+      
+4. Go to the browser of your choice and type "http://localhost:3000/" in the url
+   
 ## Technologies 
 *Node.js: JavaScript runtime environment for building the server-side application.
 *Express: Web framework for Node.js to handle routing and server-side logic.
