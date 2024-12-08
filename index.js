@@ -68,9 +68,16 @@ app.get("/retry", async (req, res) => {
   return res.redirect('/');
 });
 
-app.get("/quit", async (req, res) => {
-  return res.redirect('/');
+app.get("/quit", (req, res) => {
+  res.send(`
+    <html>
+      <body style="background-color: black; color: white">
+        <h1> Goodbye You can close this tab now.</h1>
+      </body>
+    </html>
+  `);
 });
+
 
 
 app.post("/", async (req, res) => {
